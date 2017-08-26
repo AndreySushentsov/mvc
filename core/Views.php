@@ -18,7 +18,7 @@ class View
   }
   public function render($file_name)
   {
-    echo $this->twig->render($file_name . '/index.php', array('name'=>'Main'));
+    echo $this->twig->render($file_name . '/index.php');
     //require_once __DIR__ . '/../views/' . $file_name . '/index.php';
   }
 }

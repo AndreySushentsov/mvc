@@ -2,13 +2,13 @@
 /**
  *
  */
-class User extends Controller
+class Registration extends Controller
 {
 
   function __construct()
   {
     parent::__construct();
-    echo "User controller";
+    $this->view->render('registration');
   }
 
   public function test(){

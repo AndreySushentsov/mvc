@@ -1,8 +1,10 @@
 <?php
 require_once 'core/Views.php';
-require_once 'config/database.php';
-require_once 'vendor/autoload.php';
 require_once 'core/Controller.php';
+require_once 'core/Model.php';
+require_once 'core/Database.php';
+
+require_once 'vendor/autoload.php';
 
 // задаем переменные
 $url = explode('/', $_GET['url']);
