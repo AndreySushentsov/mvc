@@ -3,12 +3,13 @@
 /**
  *
  */
-class Index
+class Index extends Controller
 {
 
   function __construct()
   {
-    $view = new View();
-    $view->render('index');
+    parent::__construct();
+    //$view = new View();
+    $this->view->render('index');
   }
 }

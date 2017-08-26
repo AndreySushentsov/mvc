@@ -1,6 +1,8 @@
 <?php
-require_once 'core/views.php';
+require_once 'core/Views.php';
+require_once 'config/database.php';
 require_once 'vendor/autoload.php';
+require_once 'core/Controller.php';
 
 // задаем переменные
 $url = explode('/', $_GET['url']);
@@ -36,7 +38,7 @@ try {
   if(file_exists($file_name)){
     require_once $file_name;
   } else {
-    throw new Exception('Файл не найден.');
+    throw new Exception('File not found');
   }
 
   if(class_exists($class_name)){

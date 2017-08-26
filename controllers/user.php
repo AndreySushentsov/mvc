@@ -2,11 +2,12 @@
 /**
  *
  */
-class User
+class User extends Controller
 {
 
   function __construct()
   {
+    parent::__construct();
     echo "User controller";
   }
 
